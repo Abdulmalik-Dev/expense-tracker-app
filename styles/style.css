@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #7fffd46b;
+}
+
+:root {
+  --main-border: 1px solid blue;
+  --green-color: #0dd50d;
+  --red-color: #f91e1ec9;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: calc(100vh - 40px);
+  margin: 20px auto;
+  padding: 5px 15px;
+  border: var(--main-border);
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 98%;
+  }
+}
+
+@media (min-width: 701px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.container .balance {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.container .cash-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: var(--main-border);
+}
+
+@media (min-width: 1200px) {
+  .container .cash-area {
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.container .cash-area div {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .cash-area div:first-child {
+  border-right: var(--main-border);
+}
+
+.container .cash-area div span {
+  display: block;
+}
+
+.container .cash-area div span#ncome {
+  color: var(--green-color);
+}
+
+.container .cash-area div span#expense {
+  color: var(--red-color);
+}
+
+.container .transactions-history {
+  margin-top: 15px;
+  overflow-y: scroll;
+  width: 85%;
+}
+
+.container .transactions-history h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .transactions-history div {
+  margin-bottom: 2px;
+  padding: 10px;
+  border: var(--main-border);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .transactions-history div span {
+  padding: 2px 8px;
+}
+
+.container .transactions-history div span.income {
+  background-color: var(--green-color);
+}
+
+.container .transactions-history div span.expense {
+  background-color: var(--red-color);
+}
+
+.container .transactions-history div button {
+  border: var(--main-border);
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.container .add-new-transaction {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1200px) {
+  .container .add-new-transaction {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container .add-new-transaction label {
+  font-weight: 600;
+}
+
+.container .add-new-transaction input {
+  border: var(--main-border);
+  outline: none;
+  padding: 5px 20px;
+}
+
+@media (min-width: 1200px) {
+  .container .add-new-transaction input {
+    width: 80%;
+  }
+}
+
+.container .add-new-transaction .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  .container .add-new-transaction .btn-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+  }
+}
+
+.container .add-new-transaction .btn-area button {
+  padding: 5px 10px;
+  border: var(--main-border);
+  cursor: pointer;
+}
+
+.container .add-new-transaction .btn-area button#addNewIncome {
+  background-color: var(--green-color);
+}
+
+.container .add-new-transaction .btn-area button#addNewExpense {
+  background-color: var(--red-color);
+}
+
+@media (min-width: 1200px) {
+  .container .add-new-transaction .btn-area button {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App</title>
+    <!-- Main Style File  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- The Heading  For Page -->
+      <h2>Expense Tracker</h1>
+
+        <!-- Balance Area  -->
+      <div class="balance">
+        <p>Your Balance</p>
+        <span id="balance">$0</span>
+      </div>
+
+      <!-- Cash Area  -->
+      <div class="cash-area">
+        <div>Income <span class="income">$0</span></div>
+        <div>Expense <span class="expense">$0</span></div>
+      </div>
+
+      <!-- The History  -->
+      <div class="transactions-history">
+        <!-- The Hidding For History  -->
+        <h3>Transactions History</h3>
+      </div>
+
+      <!-- Add New Transaction Container  -->
+      <form class="add-new-transaction">
+        <!-- For The Name  -->
+        <label for="name">Name</label>
+        <input type="text" id="cashName" />
+        <!-- For The Amount  -->
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" />
+        <!-- Add Buttons  -->
+        <div class="btn-area">
+          <button id="addNewIncome">Add Income</button>
+          <button id="addNewExpense">Add Expense</button>
+        </div>
+      </form>
+    </div>
+    <!-- Main javaScript File  -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
